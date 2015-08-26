@@ -1,4 +1,5 @@
 <?
+    require_once "include/config.php.inc";
     require_once "include/define.php.inc";
     $namePage = "Главная";
     $title = SITE_TITLE." | ".$namePage;
