@@ -3,10 +3,56 @@
 ## Глобальные константы находятся в файле /include/define.php.inc:
 
     <?
-    define("SITE_TITLE", "Храм Рождества Иоанна Предтечи");
-    define("SITE_DIR", "/prototype/");
-    define("SITE_TEMPLATE_PATH", "/prototype/");
+    define("SITE_TITLE", "FreeYachting");
+    define("SITE_DIR", "/");
+    define("SITE_TEMPLATE_PATH", "/");
     ?>
+
+## Верстка
+
+<http://fy.egoshin.net>
+
+<http://fy.egoshin.net/404.php>
+
+<http://fy.egoshin.net/help.php>
+
+<http://fy.egoshin.net/search.php>
+
+<http://fy.egoshin.net/skipper.php>
+
+<http://fy.egoshin.net/travel-archives.php>
+
+<http://fy.egoshin.net/travel-booked.php>
+
+<http://fy.egoshin.net/travel-list.php>
+
+<http://fy.egoshin.net/travel-story.php>
+
+<http://fy.egoshin.net/traveller-cabin.php>
+
+<http://fy.egoshin.net/traveller-profile.php>
+
+<http://fy.egoshin.net/traveller-registration.php>
+
+<http://fy.egoshin.net/skipper-profile.php>
+
+<http://fy.egoshin.net/skipper-registration.php>
+
+<http://fy.egoshin.net/new-travel.php>
+
+<http://fy.egoshin.net/bron-travel.php>
+
+<http://fy.egoshin.net/yachta-about.php>
+
+<http://fy.egoshin.net/yachta-history.php>
+
+<http://fy.egoshin.net/yachta-booked.php>
+
+<http://fy.egoshin.net/yachta-bron.php>
+
+<http://fy.egoshin.net/typo.php>
+
+<http://fy.egoshin.net/template.php>
 
 ## Структура шаблона
 

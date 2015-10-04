@@ -26,65 +26,45 @@
     <meta name="theme-color" content="#ffffff">
     <!-- jQuery -->
     <script src="<?=SITE_TEMPLATE_PATH?>js/jquery.min.js"></script>
-    <!-- Bootstrap JavaScript -->
     <script src="<?=SITE_TEMPLATE_PATH?>js/bootstrap.min.js"></script>
-    <!-- User JavaScript -->
+    <script src="<?=SITE_TEMPLATE_PATH?>js/media.match.min.js"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>js/enquire.min.js"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>js/jquery.jcarousel.min.js"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>js/scrollator.js"></script>
     <script src="<?=SITE_TEMPLATE_PATH?>js/script.js"></script>
     <!--[if lt IE 9]>
         <script src="<?=SITE_TEMPLATE_PATH?>js/ie9/html5shiv.min.js"></script>
         <script src="<?=SITE_TEMPLATE_PATH?>js/ie9/html5shiv-printshiv.min.js"></script>
         <script src="<?=SITE_TEMPLATE_PATH?>js/ie9/respond.js"></script>
     <![endif]-->
-    <!-- Bootstrap CSS -->
-    <link href="<?=SITE_TEMPLATE_PATH?>css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="<?=SITE_TEMPLATE_PATH?>css/font-awesome.min.css" rel="stylesheet">
-    <!-- Customize property CSS -->
     <link href="<?=SITE_TEMPLATE_PATH?>css/style.min.css" rel="stylesheet">
 </head>
 <body>
+<?
+require_once $_SERVER['DOCUMENT_ROOT']."/include/modal.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/include/howtowork.php";
+?>
     <header role="banner">
         <!-- Fixed navbar -->
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                    <button type="button" class="navbar-toggle btn-tree" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Выберите пункт меню</span>
                     </button>
-                    <a class="navbar-brand" href="<?=SITE_DIR?>">Логотип</a>
+                    <a class="navbar-brand" href="<?=SITE_DIR?>">
+                        <img src="<?=SITE_TEMPLATE_PATH?>img/logotype.png" alt="FreeYachting">
+                    </a>
                 </div>
                 <div class="collapse navbar-collapse navbar-right">
+                    <a href="#" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-times"></i></a>
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?=SITE_DIR?>">Главная</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Nav header</li>
-                                <li><a href="#">Separated link</a></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
+                        <li class="active"><a href="<?=SITE_DIR?>skipper.php"><i class="fa fa-anchor"></i>Шкиперам</a></li>
+                        <li><a href="<?=SITE_DIR?>help.php"><i class="fa fa-life-ring"></i>Помощь</a><div class="visible-lg"></div></li>
+                        <li><a href="#" data-toggle="modal" data-target="#modal-login"><i class="fa fa-lock"></i>Личный кабинет</a></li>
+                        <li><a href="#"><i class="fa fa-globe"></i>Ru</a></li>
                     </ul>
-                </div><!--/.nav-collapse -->
+                </div>
             </div>
         </div>
     </header>
-    <div class="container" id="breadcrumbs">
-        <ol class="breadcrumb">
-            <li>
-                <a href="<?=SITE_DIR?>">Главная</a>
-            </li>
-            <li class="active"><?=$namePage?></li>
-        </ol>
-    </div>
-    <!-- Begin page content -->
-    <div class="container">
